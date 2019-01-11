@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Yanu Widodo</title>
-    <link>http://ynwd.web.id/</link>
-    <description>Recent content on Yanu Widodo</description>
+    <title>ynwd.github.io</title>
+    <link>http://ynwd.github.io/</link>
+    <description>Recent content on ynwd.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>2017</copyright>
     
-	<atom:link href="http://ynwd.web.id/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://ynwd.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

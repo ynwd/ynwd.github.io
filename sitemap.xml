@@ -3,17 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://ynwd.web.id/categories/</loc>
+    <loc>http://ynwd.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://ynwd.web.id/tags/</loc>
+    <loc>http://ynwd.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://ynwd.web.id/</loc>
+    <loc>http://ynwd.github.io/</loc>
     <priority>0</priority>
   </url>
   
