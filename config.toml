@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "http://ynwd.github.io/"
 languageCode = "en-us"
 title = "Yanu"
 theme = "hugo-ink"
