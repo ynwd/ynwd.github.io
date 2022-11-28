@@ -17,7 +17,7 @@ disqusShortname = "ink-demo"
 	subtitle = "App development, continuous integration, delivery, and deployment"
 
 	# Optional 64x64 avatar image.
-	avatar = "https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg"
+	avatar = "https://raw.githubusercontent.com/ynwd/ynwd.github.io/main/themes/hugo-ink/images/pic.png"
 
 	# Content types to disable Disqus on.
 	disableDisqusTypes = ["page"]
