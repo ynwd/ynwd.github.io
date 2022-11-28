@@ -90,7 +90,7 @@ html
 
 #### Code block with Hugo's internal highlight shortcode
 {{< highlight html >}}
-<!DOCTYPE html>
+<!DOCTYPE html "linenos=table">
 <html lang="en">
 <head>
   <meta charset="UTF-8">
