@@ -109,6 +109,17 @@ Vagrant dibuat untuk mengatasi problem itu. Ia memanfaatkan virtualbox untuk mem
     end
     ```
 
+9. Mengganti shared folder  
+    Cari `config.vm.synced_folder`. Update shared folder.
+    ```ruby
+    # Share an additional folder to the guest VM. The first argument is
+    # the path on the host to the actual folder. The second argument is
+    # the path on the guest to mount the folder. And the optional third
+    # argument is a set of non-required options.
+    config.vm.synced_folder ".", "/vagrant_data"
+    ```
+    Konfigurasi di atas akan menyebabkan folder di mana vagrant dijalankan, akan bisa diakses via SSH di dalam folder `"/vagrant_data"`.
+
 10. Recreate VM after update
     
     Jangan lupa untuk `destroy` setelah melakukan perubahan di `Vagrantfile`.  
