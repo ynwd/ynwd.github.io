@@ -10,8 +10,8 @@ pygmentsstyle = "vs"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-googleAnalytics = "UA-123-45"
-disqusShortname = "ink-demo"
+# googleAnalytics = "UA-123-45"
+# disqusShortname = "ink-demo"
 
 [params]
 	subtitle = "App development, continuous integration, delivery, and deployment"
