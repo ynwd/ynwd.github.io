@@ -4,7 +4,7 @@ title = "Notes"
 theme = "hugo-ink"
 paginate = 5
 
-copyright = "© Yanu"
+copyright = "© Yanu Widodo"
 
 pygmentsstyle = "vs"
 pygmentscodefences = true
