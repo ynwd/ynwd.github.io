@@ -88,7 +88,7 @@ Vagrant dibuat untuk mengatasi problem itu. Ia memanfaatkan virtualbox untuk mem
     config.vm.network "private_network", ip: "192.168.33.10"
     ```
 
-    Dengan konfigurasi di atas, kamu dapat mengakses apache webserver dengan membuka http://192.168.33.10 dari browser.
+    Dengan konfigurasi di atas, kamu dapat mengakses apache webserver dengan membuka http://192.168.33.10:8080 dari browser.
 
 8. Mengganti Memori dan CPU  
     Cari `config.vm.provider`. Update memori dan CPU:
