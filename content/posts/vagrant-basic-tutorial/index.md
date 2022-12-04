@@ -79,7 +79,7 @@ Vagrant dibuat untuk mengatasi problem itu. Ia memanfaatkan virtualbox untuk mem
     - Hapus VM: `vagrant destroy`
 
 7. Networking  
-    Buka `Vagranatfile` lagi. Cari dan *un-comment* komentar bagian-bagian ini:
+    Buka `Vagrantfile` lagi. Cari dan *un-comment* komentar bagian-bagian ini:
     ```ruby
     # Create a forwarded port mapping which allows access to a specific port
     # within the machine from a port on the host machine. In the example below,
