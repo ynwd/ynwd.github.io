@@ -9,7 +9,7 @@ tags: [vagrant]
 
 ![vagrant](node.png)
 
-> You can find the source-code of this tutorial at: [https://github.com/ynwd/vagrant-node](https://github.com/ynwd/vagrant-node).
+> You can find the source-code of this tutorial at: [https://github.com/ynwd/vagrant-node](https://github.com/ynwd/vagrant-node)
 
 
 1. Create application folder
