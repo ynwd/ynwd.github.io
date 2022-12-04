@@ -9,6 +9,9 @@ tags: [vagrant]
 
 ![vagrant](node.png)
 
+> You can find the source-code of this tutorial at: [https://github.com/ynwd/vagrant-node](https://github.com/ynwd/vagrant-node).
+
+
 1. Create application folder
     ```
     mkdir vagrant-node && cd vagrant-node
@@ -104,8 +107,3 @@ tags: [vagrant]
     You can access node.js application from localhost with: [http://192.168.33.10:3000](http://192.168.33.10:3000).
 
     You can also edit `main.js` file directly.
-
-
-Find source-code of this tutorial on: [https://github.com/ynwd/vagrant-node](https://github.com/ynwd/vagrant-node).
-
-
