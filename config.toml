@@ -1,6 +1,6 @@
 baseURL = "http://ynwd.github.io/"
 languageCode = "en-us"
-title = "Notes"
+title = "Dev Notes"
 theme = "hugo-ink"
 paginate = 5
 
