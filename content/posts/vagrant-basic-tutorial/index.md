@@ -12,6 +12,8 @@ Saat development dengan beberapa orang pada project yang sama, biasanya sering t
 
 Vagrant dibuat untuk mengatasi problem itu. Ia memanfaatkan virtualbox untuk membuat sebuah atau beberapa virtual server sekaligus. Kita dapat membuat virtual server yang sama persis dengan yang pertama di komputer lain berdasarkan konfigurasi yang telah dibuat.
 
+> Kamu bisa mendapatkan source code artikel ini di sini: https://github.com/ynwd/vagrant
+
 1. Install vagrant  
 
     Download dan install [virtualbox](https://www.virtualbox.org/wiki/Downloads). 
@@ -136,5 +138,3 @@ Vagrant dibuat untuk mengatasi problem itu. Ia memanfaatkan virtualbox untuk mem
     ```
     vagrant reload
     ```
-    
-    Kamu bisa mendapatkan source code artikel ini di sini: https://github.com/ynwd/vagrant
