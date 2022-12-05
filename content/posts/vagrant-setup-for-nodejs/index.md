@@ -2,7 +2,6 @@
 title: "Vagrant setup for node.js"
 date: 2022-12-04T17:20:21+07:00
 description: "Simple steps to setup vagrant for node.js application"
-images: ["posts/vagrant-basic-tutorial/vagrant.png"]
 images: ["posts/vagrant-setup-for-nodejs/node.png"]
 tags: [vagrant]
 ---
