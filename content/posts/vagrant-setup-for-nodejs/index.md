@@ -99,10 +99,15 @@ tags: [vagrant]
     vagrant@ubuntu-jammy:/vagrant$
     ```
 
-9. Run nodejs from ssh
+9. Login as root
+    ```
+    sudo su
+    ```
+    
+10. Run application
     ```
     node main.js
     ```
-    You can access node.js application from localhost with: [http://192.168.33.10:3000](http://192.168.33.10:3000).
+    You can access node.js application from localhost with ip: [http://192.168.33.10:3000](http://192.168.33.10:3000).
 
     You can also edit `main.js` file directly.
