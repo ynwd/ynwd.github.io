@@ -24,8 +24,6 @@
 				{{ .Content }}
 			</div>
 
-			{{ partial "related.html" . }}
-
 			<div class="tags">
 				{{ if ne .Type "page" }}
 					{{ if gt .Params.tags 0 }}
@@ -37,6 +35,8 @@
 					{{ end }}
 				{{ end }}
 			</div>
+
+			{{ partial "related.html" . }}
 
 			{{- if .Site.DisqusShortname -}}
 			{{- $.Scratch.Set "isDisqus" true -}}
