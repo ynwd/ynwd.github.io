@@ -24,6 +24,8 @@
 				{{ .Content }}
 			</div>
 
+			{{ partial "related.html" . }}
+
 			<div class="tags">
 				{{ if ne .Type "page" }}
 					{{ if gt .Params.tags 0 }}

@@ -19,15 +19,17 @@ pygmentscodefencesguesssyntax = true
   priority = 0.5
 
 [related]
-  includeNewer = false
+  includeNewer = true
   threshold = 80
   toLower = false
-[[related.indices]]
-  name = 'keywords'
-  weight = 100
-[[related.indices]]
-  name = 'date'
-  weight = 10
+
+  [[related.indices]]
+    name = "tags"
+    weight = 30
+
+  [[related.indices]]
+    name = "date"
+    weight = 10
 
 [params]
 	subtitle = "App development, continuous integration, delivery, and deployment"
