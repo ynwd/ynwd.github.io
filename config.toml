@@ -1,4 +1,4 @@
-baseURL = "http://ynwd.github.io/"
+baseURL = "http://ynwd.github.io"
 languageCode = "en-us"
 title = "Dev notes"
 theme = "hugo-ink"
