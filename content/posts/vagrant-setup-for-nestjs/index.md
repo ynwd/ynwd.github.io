@@ -27,6 +27,8 @@ tags: [vagrant]
     end
     ```
 
+    Please note that: `privileged: false` is used to make `vagrant` as root user.
+
 2. Run vagrant-vm
     ```
     vagrant up
