@@ -83,12 +83,23 @@ Vagrant dibuat untuk mengatasi problem itu. Ia memanfaatkan virtualbox untuk mem
 7. Networking  
     Buka `Vagrantfile` lagi. Cari dan *un-comment* komentar bagian-bagian ini:
     ```ruby
+    # Create a forwarded port mapping which allows access to a specific port
+    # within the machine from a port on the host machine. In the example below,
+    # accessing "localhost:8080" will access port 80 on the guest machine.
+    # NOTE: This will enable public access to the opened port
+    config.vm.network "forwarded_port", guest: 80, host: 8080
+
     # Create a private network, which allows host-only access to the machine
     # using a specific IP.
     config.vm.network "private_network", ip: "192.168.33.10"
+
+    # Create a public network, which generally matched to bridged network.
+    # Bridged networks make the machine appear as another physical device on
+    # your network.
+    config.vm.network "public_network"
     ```
 
-    Dengan konfigurasi di atas, kamu dapat mengakses apache webserver dengan membuka http://192.168.33.10:8080 dari browser.
+    Dengan konfigurasi di atas, kamu dapat mengakses apache webserver dengan membuka http://192.168.33.10 dari browser.
 
 8. Mengganti Memori dan CPU  
     Cari `config.vm.provider`. Update memori dan CPU:
