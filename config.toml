@@ -13,6 +13,11 @@ pygmentscodefencesguesssyntax = true
 # googleAnalytics = "UA-123-45"
 # disqusShortname = "ink-demo"
 
+[sitemap]
+  changefreq = 'hourly'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
 [related]
   includeNewer = false
   threshold = 80
