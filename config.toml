@@ -32,7 +32,7 @@ pygmentscodefencesguesssyntax = true
     weight = 10
 
 [params]
-	subtitle = "App development, continuous integration, delivery, and deployment"
+	subtitle = "App development, Cloud, CICD, Kubernetes"
 
 	# Optional 64x64 avatar image.
 	avatar = "https://raw.githubusercontent.com/ynwd/ynwd.github.io/main/themes/hugo-ink/images/pic.png"
