@@ -6,6 +6,8 @@ images: ["posts/vagrant-basic-tutorial/vagrant.png"]
 tags: [vagrant]
 ---
 
+## Vagrant
+
 ```ruby
 Vagrant.configure("2") do |config|
   config.vm.define "node" do |node|
@@ -20,8 +22,10 @@ Vagrant.configure("2") do |config|
     end
 
     node.vm.provision "shell", inline: <<-SHELL
-      apk update
-      apk add nodejs npm
+      if ! type "node" > /dev/null; then
+        apk update
+        apk add nodejs npm
+      fi
     SHELL
   end
 
@@ -36,14 +40,21 @@ Vagrant.configure("2") do |config|
     end
 
     postgres.vm.provision "shell", inline: <<-SHELL
-      apk update
-      apk add postgresql postgresql-client
-      /etc/init.d/postgresql setup
-      /etc/init.d/postgresql start && rc-update add postgresql default
-      createuser -U postgres -s root
-      createdb root
-      createuser -U postgres -s vagrant
-      createdb vagrant
+      if ! type "psql" > /dev/null; then
+        apk update
+        apk add postgresql postgresql-client
+        rc-update add postgresql default
+        rc-service postgresql start
+
+        sed -i "/^#listen_addresses/a listen_addresses = '\*'" /etc/postgresql/postgresql.conf
+        sed -i 's/127.0.0.1\\/32/all/g' /etc/postgresql/pg_hba.conf
+
+        rc-service postgresql restart
+        createuser -U postgres -s root
+        createdb root
+        createuser -U postgres -s vagrant
+        createdb vagrant
+      fi
     SHELL
   end
 
@@ -58,15 +69,37 @@ Vagrant.configure("2") do |config|
     end
 
     redis.vm.provision "shell", inline: <<-SHELL
-      apk update
-      apk add redis
-      sed -i 's/bind 127.0.0.1 -::1/# bind 127.0.0.1 -::1/g' /etc/redis.conf
-      sed -i 's/# requirepass foobared/requirepass root/g' /etc/redis.conf
-      rc-service redis start 
-      rc-update add redis default
+      if ! type "redis-cli" > /dev/null; then
+        apk update
+        apk add redis
+        sed -i 's/bind 127.0.0.1 -::1/# bind 127.0.0.1 -::1/g' /etc/redis.conf
+        sed -i 's/# requirepass foobared/requirepass root/g' /etc/redis.conf
+        rc-service redis start 
+        rc-update add redis default
+      fi
     SHELL
   end
 
 end
 
+```
+
+## Setup
+```
+vagrant up
+```
+
+## Nodejs
+```
+vagrant ssh node
+```
+
+## Postgres
+```
+vagrant ssh postgres
+```
+
+## Redis
+```
+vagrant ssh redis
 ```
