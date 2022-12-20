@@ -80,3 +80,6 @@ url = "/index.xml"
 
 [taxonomies]
    tag = "tags"
+
+[minify]
+  disableXML = true
