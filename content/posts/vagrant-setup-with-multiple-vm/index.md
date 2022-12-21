@@ -6,7 +6,7 @@ images: ["posts/vagrant-basic-tutorial/vagrant.png"]
 tags: [vagrant]
 ---
 
-## Vagrant
+## Vagrantfile
 
 ```ruby
 Vagrant.configure("2") do |config|
@@ -98,8 +98,16 @@ vagrant ssh node
 ```
 vagrant ssh postgres
 ```
+You can access from localhost:
+```
+psql -h 192.168.33.11 -U postgres
+```
 
 ## Redis
 ```
 vagrant ssh redis
+```
+You can access from localhost:
+```
+redis-cli -h 192.168.33.12 -p 6379
 ```
