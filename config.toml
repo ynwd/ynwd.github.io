@@ -9,6 +9,7 @@ copyright = "© Yanu Widodo"
 pygmentsstyle = "vs"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
+enableRobotsTXT = true
 
 # googleAnalytics = "UA-123-45"
 # disqusShortname = "ink-demo"
@@ -27,20 +28,20 @@ pygmentscodefencesguesssyntax = true
     weight = 10
 
 [params]
-	subtitle = "App development, Cloud, CICD, Kubernetes"
+subtitle = "App development, Cloud, CICD, Kubernetes"
 
-	# Optional 64x64 avatar image.
-	avatar = "https://raw.githubusercontent.com/ynwd/ynwd.github.io/main/themes/hugo-ink/images/pic.png"
+# Optional 64x64 avatar image.
+avatar = "https://raw.githubusercontent.com/ynwd/ynwd.github.io/main/themes/hugo-ink/images/pic.png"
 
-	# Content types to disable Disqus on.
-	disableDisqusTypes = ["page"]
-	
-	featherIconsCDN = true
+# Content types to disable Disqus on.
+disableDisqusTypes = ["page"]
 
-	mode = "dark" # "dark" or "auto"
-	# customCSS = "css/custom.css"  # Custom CSS applied to default styles.
-	# customDarkCSS = "css/custom-dark.css"  # Custom styles applied to dark mode css.
-	# customJS = ["js/custom.js", "js/custom1.js"]  # Custom JS scripts.
+featherIconsCDN = true
+
+mode = "dark" # "dark" or "auto"
+# customCSS = "css/custom.css"  # Custom CSS applied to default styles.
+# customDarkCSS = "css/custom-dark.css"  # Custom styles applied to dark mode css.
+# customJS = ["js/custom.js", "js/custom1.js"]  # Custom JS scripts.
 
 # Nav.
 [[menu.main]]
@@ -74,7 +75,4 @@ icon = "rss"
 url = "/index.xml"
 
 [taxonomies]
-   tag = "tags"
-
-[minify]
-  disableXML = true
+tag = "tags"
