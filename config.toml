@@ -1,4 +1,4 @@
-baseURL = "https://ynwd.github.io/"
+baseURL = "https://ynwd.github.io"
 languageCode = "en-us"
 title = "Dev notes"
 theme = "hugo-ink"
@@ -15,17 +15,17 @@ enableRobotsTXT = true
 # disqusShortname = "ink-demo"
 
 [related]
-  includeNewer = true
-  threshold = 80
-  toLower = false
+includeNewer = true
+threshold = 80
+toLower = false
 
-  [[related.indices]]
-    name = "tags"
-    weight = 30
+[[related.indices]]
+name = "tags"
+weight = 30
 
-  [[related.indices]]
-    name = "date"
-    weight = 10
+[[related.indices]]
+name = "date"
+weight = 10
 
 [params]
 subtitle = "App development, Cloud, CICD, Kubernetes"
