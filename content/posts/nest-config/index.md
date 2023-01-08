@@ -8,7 +8,6 @@ tags: [nest]
 
 > You can find the source code of this tutorial at: [https://github.com/ynwd/nest-init/tree/config](https://github.com/ynwd/nest-init/tree/config)
 
-> The @nestjs/config package internally uses dotenv.
 
 Install nest-config
 ```bash
@@ -32,6 +31,8 @@ import { ConfigModule } from '@nestjs/config';
 export class AppModule {}
 
 ```
+
+> The @nestjs/config package internally uses dotenv.
 
 The above code will load and parse a .env file from the default location (the project root directory), merge key/value pairs from the .env file with environment variables assigned to process.env, and store the result in a private structure that you can access through the ConfigService. 
 
@@ -62,4 +63,15 @@ export const databaseProviders = [
   },
 ];
 
+```
+
+This is the `.env` file that define app environment
+
+```
+DB_NAME=test
+DB_USERNAME=postgres
+DB_PASSWORD=root
+DB_PORT=5432
+DB_HOST=localhost
+DB_SYNC=true
 ```
