@@ -219,6 +219,11 @@ export class UpdateUserDto {
 
 ```
 
+Run database
+```
+$ docker-compose up
+```
+
 Run the server
 ```
 $ nest start -w
