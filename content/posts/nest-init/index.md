@@ -8,7 +8,7 @@ tags: [nest]
 
 ![vagrant](nest.jpg)
 
-> You can find the source-code of this tutorial at: [https://github.com/ynwd/nest-init](https://github.com/ynwd/nest-init)
+> You can find the source-code of this tutorial at: [https://github.com/ynwd/nest-init/tree/init](https://github.com/ynwd/nest-init/tree/init)
 
 ## Create app
 ```bash
