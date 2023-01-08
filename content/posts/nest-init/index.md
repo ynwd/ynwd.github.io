@@ -1,6 +1,6 @@
 ---
 title: "Nest init"
-date: "2023-01-07"
+date: "2023-01-06"
 description: "Very step by step article to start a nest project"
 images: ["posts/nest-init/nest.jpg"]
 tags: [nest]
