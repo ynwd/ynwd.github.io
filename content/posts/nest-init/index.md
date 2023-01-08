@@ -43,6 +43,8 @@ It will automatically generate the below file and register it to `app.module.ts`
 - `create-user.dto.ts`
 - `update-user.dto.ts`
 
+Open [http://localhost:3000/user](http://localhost:3000/user). You will be surprised if all the endpoints for CRUD are created automatically.
+
 You can adjust the files above to suite your use case.
 
 ## Create a new module, service, and controller
